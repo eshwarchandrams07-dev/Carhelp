@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Car Finder</h1>
+
+<section>
+  <h2>Search Cars</h2>
+  <input type="number" id="minPrice" placeholder="Min Price (in lakhs)">
+  <input type="number" id="maxPrice" placeholder="Max Price (in lakhs)">
+  <select id="type">
+    <option value="">Type (optional)</option>
+    <option value="SUV">SUV</option>
+    <option value="Hatchback">Hatchback</option>
+    <option value="Sedan">Sedan</option>
+  </select>
+
+  <h3>Preferences</h3>
+  Comfort: <select id="prefComfort">
+    <option value="">Any</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+  Performance: <select id="prefPerformance">
+    <option value="">Any</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+  Features: <select id="prefFeatures">
+    <option value="">Any</option>
+    <option value="Basic">Basic</option>
+    <option value="Medium">Medium</option>
+    <option value="Premium">Premium</option>
+  </select>
+  Safety: <select id="prefSafety">
+    <option value="">Any</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+
+  <button onclick="showCars()">Search</button>
+</section>
+
+<div id="results"></div>
+
+<hr>
+
+<section>
+  <h2>Add Car</h2>
+  <input type="text" id="carName" placeholder="Car Name">
+  <input type="number" id="carPrice" placeholder="Price (in lakhs)">
+  <select id="carType">
+    <option value="SUV">SUV</option>
+    <option value="Hatchback">Hatchback</option>
+    <option value="Sedan">Sedan</option>
+  </select>
+
+  <h3>Preferences</h3>
+  Comfort: <select id="carComfort">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+  Performance: <select id="carPerformance">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+  Features: <select id="carFeatures">
+    <option value="Basic">Basic</option>
+    <option value="Medium">Medium</option>
+    <option value="Premium">Premium</option>
+  </select>
+  Safety: <select id="carSafety">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+
+  <button onclick="addCar()">Add Car</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
